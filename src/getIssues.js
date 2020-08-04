@@ -1,6 +1,6 @@
 const fetch = require('node-fetch')
-const add = require("date-fn/add")
-const formatISO = require("date-fn/formatISO")
+const add = require("date-fns/add")
+const formatISO = require("date-fns/formatISO")
 const { issuesUrl } = require('./config')
 
 const log = require('debug')('vuejsbr:vagasbot:getIssues')
