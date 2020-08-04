@@ -1,0 +1,10 @@
+{
+  "bindings": [
+    {
+      "name": "VuejsBrVagas",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */30 * * * 1-5"
+    }
+  ]
+}
