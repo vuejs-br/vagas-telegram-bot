@@ -1,12 +1,12 @@
-const { Telegraf } = require('telegraf')
+require('./telegram.validation')()
 
-const log = require('debug')('vuejsbr:vagasbot:telegram')
+const { Telegraf } = require('telegraf')
 
 const {
   TELEGRAM: { botToken, startMsg, chatId, sendMessageConfig }
 } = require('./config')
 
-require('./telegram.validation')()
+const log = require('debug')('vuejsbr:vagasbot:telegram')
 
 const bot = new Telegraf(botToken)
 bot.start((ctx) => ctx.reply(startMsg))
