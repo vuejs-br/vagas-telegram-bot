@@ -1,4 +1,3 @@
-const TIME_ZONE = 'America/Sao_Paulo'
 const GITHUB_API = 'https://api.github.com'
 const GITHUB_ISSUES = 'issues?state=open&direction=desc&since='
 
@@ -20,10 +19,7 @@ Object.freeze(TELEGRAM)
 
 const issuesUrl = repoName => `${GITHUB_API}/repos/${repoName}/${GITHUB_ISSUES}`
 
-require('debug')('vuejsbr:vagasbot:config')('TIME_ZONE', TIME_ZONE)
-
 module.exports = {
-  TIME_ZONE,
   TELEGRAM,
   issuesUrl
 }
