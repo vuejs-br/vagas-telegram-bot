@@ -4,6 +4,7 @@ const GITHUB_ISSUES = 'issues?state=open&direction=desc&since='
 const TELEGRAM = {
   botToken: process.env.TELEGRAM_BOT_TOKEN,
   chatId: process.env.TELEGRAM_CHAT_ID,
+  chatIdMonitor: process.env.TELEGRAM_CHAT_ID_MONITOR,
   sendMessageConfig: {
     disable_web_page_preview: true,
     parse_mode:'Markdown'
