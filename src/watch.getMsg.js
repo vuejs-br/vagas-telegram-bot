@@ -5,7 +5,8 @@ const getMsg = ({body, title, labels, html_url}) =>  {
     '## Nossa empresa', 'Nossa empresa', '## Empresa',
     '## Descrição da vaga', '## Local', '## Requisitos',
     '## Contratação', '## Como se candidatar', '## Labels',
-    '#### Alocação', '#### Regime', '#### Nível', '**'
+    '#### Alocação', '#### Regime', '#### Nível', '**',
+    '> Vaga Remota durante a pandemia'
   ].forEach(w => { body = body.split(w).join(' ') });
 
   [' ', '\r\n', '\r','\n'].forEach(c => {
@@ -13,7 +14,7 @@ const getMsg = ({body, title, labels, html_url}) =>  {
     .map(w => w.trim())
     .filter(w => w !== '')
     .slice(0, 65)
-    .join(c)
+    .join(' ')
   });
 
   body = body.split('<!--')
