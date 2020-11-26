@@ -14,7 +14,7 @@ const removeWords = [
 
 const regekiz = [
     /(([\t ]*nossa|[#]*[\t ]*[#]+[\t ]*(nossa)?)[\t ]*empresa[\t ]*)/gmi,
-    ...removeWords.map(v => RegExp(`([\t ]*(?>[#]+[\t ]*)+${v}[\t ]*)`, 'gmi'))
+    ...removeWords.map(v => RegExp(`([\t ]*(?:[#]+[\t ]*)+${v}[\t ]*)`, 'gmi'))
 ]
 
 const getMsg = ({body, title, labels, html_url}) =>  {
