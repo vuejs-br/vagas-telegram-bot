@@ -1,8 +1,15 @@
 const NOBODY = 'POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END!'
 
 const removeWords = [
-    'regime',  'local', 'como se candidatar',
-    'n[íi]vel', 'aloca[çc][ãa]o', 'label[s]?', 'requisito[s]?', 'contrata[çc][ãa]o', 'descri[çc][ãa]o da vaga'    
+    'regime',
+    'local',
+    'n[íi]vel',
+    'label[s]?',
+    'requisito[s]?', 
+    'aloca[çc][ãa]o',
+    'contrata[çc][ãa]o', 
+    'como[\t ]+se[\t ]+candidatar',
+    'descri[çc][ãa]o[\t ]+da[\t ]+vaga'    
 ]
 
 const regekiz = [
