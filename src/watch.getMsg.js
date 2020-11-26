@@ -2,10 +2,12 @@ const NOBODY = 'POR FAVOR, SÓ POSTE SE A VAGA FOR PARA FRONT-END!'
 
 const getMsg = ({body, title, labels, html_url}) =>  {
   [
-    '## Nossa empresa', 'Nossa empresa', '## Empresa',
+    '## Nossa empresa', '## Nossa Empresa',
+    'Nossa empresa', 'Nossa Empresa', '## Empresa',
     '## Descrição da vaga', '## Local', '## Requisitos',
     '## Contratação', '## Como se candidatar', '## Labels',
-    '#### Alocação', '#### Regime', '#### Nível', '**',
+    '#### Alocação', '#### Regime', '#### Nível',
+    '**', '##', '###', '####',
     '> Vaga Remota durante a pandemia'
   ].forEach(w => { body = body.split(w).join(' ') });
 
